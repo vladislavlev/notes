@@ -7,8 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "MTLModel.h"
+#import "MTLJSONAdapter.h"
 
-@interface Note : NSObject
+
+@interface Note : MTLModel <MTLJSONSerializing>
 
 #pragma mark - Properties
 

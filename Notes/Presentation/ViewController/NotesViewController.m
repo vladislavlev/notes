@@ -14,6 +14,7 @@
 #import "DisplayViewController.h"
 #import "NSString+DateConvertation.h"
 #import "Constants.h"
+#import "MTLJSONAdapter.h"
 
 @interface NotesViewController () <UINavigationControllerDelegate>
 
@@ -69,16 +70,18 @@
     NSArray *notesData = data[0];
     NSUInteger notesCount = [notesData count];
     [self.notes removeAllObjects];
+    
+    
     for (int i = 0; i < notesCount; i++)
     {
       NSDictionary *noteData = notesData[i];
-      NSString *text = noteData[NoteBody];
-      NSString *creationDate = noteData[NoteCreationDate];
-      NSString *modificationDate = noteData[NoteModificationDate];
-      Note *note = [[Note alloc] init];
-      note.text = text;
-      note.creationDate = creationDate;
-      note.modificationDate = modificationDate;
+      NSError *error = nil;
+      Note *note = [MTLJSONAdapter modelOfClass:Note.class fromJSONDictionary:noteData error:&error];
+      
+     /* Note *note = [[Note alloc] init];
+      note.text = noteData[NoteBody];
+      note.creationDate = noteData[NoteCreationDate];
+      note.modificationDate = noteData[NoteModificationDate];*/
       [self.notes addObject: note];
     }
     [self.tableView reloadData];

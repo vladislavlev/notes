@@ -7,6 +7,7 @@ target 'Notes' do
 
   # Pods for Notes
 pod 'AFNetworking', '~> 3.0'
+pod 'Mantle', '2.1.0'
 
   target 'NotesTests' do
     inherit! :search_paths
