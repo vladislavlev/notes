@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "18DCB54BA7849ABFFBB3943897F7B0028E3EDC68",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "556220A33FFAC59AE4BE4065DC9E80EAE4DA83EB" : 9223372036854775807,
+    "18DCB54BA7849ABFFBB3943897F7B0028E3EDC68" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "4FBC5B53-9DB7-470B-AC70-B64474FEBB21",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "556220A33FFAC59AE4BE4065DC9E80EAE4DA83EB" : "",
+    "18DCB54BA7849ABFFBB3943897F7B0028E3EDC68" : "notes\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Notes",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Notes.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/vladislavlev\/notes.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "18DCB54BA7849ABFFBB3943897F7B0028E3EDC68"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:vladislavlev\/notes",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "556220A33FFAC59AE4BE4065DC9E80EAE4DA83EB"
+    }
+  ]
+}
