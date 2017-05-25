@@ -123,7 +123,6 @@
   Note *note = self.notes[indexPath.row];
   
   cell.creationDateLabel.text = [note.creationDate convertToDate];
-  if ([note.creationDate isEqualToString:note.modificationDate])  cell.modificationDateLabel.text = note.modificationDate;
   cell.textView.text = note.text;
   return cell;
 }

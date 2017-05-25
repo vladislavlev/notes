@@ -13,7 +13,6 @@
 #pragma mark - IBOutlets
 
 @property (weak, nonatomic) IBOutlet UILabel *creationDateLabel;
-@property (weak, nonatomic) IBOutlet UILabel *modificationDateLabel;
 @property (weak, nonatomic) IBOutlet UITextView *textView;
 
 @end

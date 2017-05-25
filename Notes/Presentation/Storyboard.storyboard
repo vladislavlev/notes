@@ -6,8 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
-        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
-        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -39,16 +37,11 @@
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                         </textView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="252" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="msY-X6-24q" userLabel="Creation Date Label">
-                                            <rect key="frame" x="12" y="104" width="0.0" height="16"/>
-                                            <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
-                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="252" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sz1-oz-o3Q" userLabel="Modification Date Label">
-                                            <rect key="frame" x="213" y="106" width="136" height="0.0"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="252" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="msY-X6-24q" userLabel="Creation Date Label">
+                                            <rect key="frame" x="119.5" y="104" width="140" height="15"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="136" id="BmS-ga-FyV"/>
+                                                <constraint firstAttribute="width" constant="140" id="uiv-U5-bz0"/>
+                                                <constraint firstAttribute="height" constant="15" id="zGL-O2-Td0"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
                                             <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -56,13 +49,11 @@
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="Sz1-oz-o3Q" firstAttribute="top" secondItem="HYC-jO-wgk" secondAttribute="topMargin" constant="98" id="18b-TQ-j2n"/>
                                         <constraint firstItem="Ioy-UB-WgE" firstAttribute="leading" secondItem="HYC-jO-wgk" secondAttribute="leading" constant="8" id="BdF-CA-BkZ"/>
-                                        <constraint firstItem="msY-X6-24q" firstAttribute="top" secondItem="HYC-jO-wgk" secondAttribute="topMargin" constant="96" id="QM1-h3-5E9"/>
+                                        <constraint firstItem="msY-X6-24q" firstAttribute="centerX" secondItem="HYC-jO-wgk" secondAttribute="centerX" constant="18" id="R1h-DM-Shn"/>
                                         <constraint firstItem="msY-X6-24q" firstAttribute="bottom" secondItem="HYC-jO-wgk" secondAttribute="bottomMargin" id="XRD-r9-Ypm"/>
-                                        <constraint firstItem="msY-X6-24q" firstAttribute="leading" secondItem="HYC-jO-wgk" secondAttribute="leadingMargin" constant="4" id="bNF-6l-dT3"/>
+                                        <constraint firstItem="msY-X6-24q" firstAttribute="top" secondItem="HYC-jO-wgk" secondAttribute="top" constant="104" id="Xil-KA-5ro"/>
                                         <constraint firstItem="Ioy-UB-WgE" firstAttribute="top" secondItem="HYC-jO-wgk" secondAttribute="top" constant="8" id="hc4-79-Emf"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="Sz1-oz-o3Q" secondAttribute="trailing" constant="-15" id="trJ-nX-GGX"/>
                                         <constraint firstAttribute="bottom" secondItem="Ioy-UB-WgE" secondAttribute="bottom" constant="19" id="uBr-ja-4Vk"/>
                                         <constraint firstAttribute="trailing" secondItem="Ioy-UB-WgE" secondAttribute="trailing" id="xec-UD-hkd"/>
                                     </constraints>
@@ -70,7 +61,6 @@
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="creationDateLabel" destination="msY-X6-24q" id="Lfg-R9-Dzp"/>
-                                    <outlet property="modificationDateLabel" destination="Sz1-oz-o3Q" id="mnn-EL-i0U"/>
                                     <outlet property="textView" destination="Ioy-UB-WgE" id="e81-il-82z"/>
                                 </connections>
                             </tableViewCell>
@@ -130,22 +120,17 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0t8-XM-Eti" userLabel="Text View">
-                                <rect key="frame" x="8" y="95" width="359" height="572"/>
+                                <rect key="frame" x="8" y="634" width="359" height="33"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="252" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0CL-by-AyF" userLabel="Creation Date Label">
-                                <rect key="frame" x="12" y="72" width="140" height="15"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="252" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0CL-by-AyF" userLabel="Creation Date Label">
+                                <rect key="frame" x="117.5" y="72" width="140" height="15"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="140" id="1xE-fG-9yN"/>
+                                    <constraint firstAttribute="width" constant="140" id="DlM-c3-ZYa"/>
+                                    <constraint firstAttribute="height" constant="15" id="OYI-2J-J1p"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
-                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="252" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GLP-gh-TWn" userLabel="Modification Date Label">
-                                <rect key="frame" x="223" y="72" width="140" height="15"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -153,23 +138,16 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="0t8-XM-Eti" firstAttribute="top" secondItem="0CL-by-AyF" secondAttribute="bottom" constant="8" symbolic="YES" id="2vW-2Z-LRe"/>
                             <constraint firstItem="0t8-XM-Eti" firstAttribute="centerX" secondItem="RGQ-pi-upY" secondAttribute="centerX" id="9dc-nJ-l65"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="GLP-gh-TWn" secondAttribute="trailing" constant="-4" id="D73-qc-IeS"/>
-                            <constraint firstItem="GLP-gh-TWn" firstAttribute="leading" secondItem="0CL-by-AyF" secondAttribute="trailing" constant="71" id="GDK-Oq-d3m"/>
+                            <constraint firstItem="0CL-by-AyF" firstAttribute="centerX" secondItem="RGQ-pi-upY" secondAttribute="centerX" id="FsO-JF-YFq"/>
                             <constraint firstItem="0t8-XM-Eti" firstAttribute="bottom" secondItem="teI-fG-iVd" secondAttribute="top" id="JfF-ft-yoh"/>
-                            <constraint firstItem="0CL-by-AyF" firstAttribute="baseline" secondItem="GLP-gh-TWn" secondAttribute="firstBaseline" id="Vgl-F5-KuR"/>
-                            <constraint firstItem="0CL-by-AyF" firstAttribute="baseline" secondItem="GLP-gh-TWn" secondAttribute="baseline" id="aoa-u9-EvL"/>
-                            <constraint firstItem="GLP-gh-TWn" firstAttribute="baseline" secondItem="0CL-by-AyF" secondAttribute="firstBaseline" id="jd6-by-BQt"/>
-                            <constraint firstItem="0CL-by-AyF" firstAttribute="leading" secondItem="RGQ-pi-upY" secondAttribute="leadingMargin" constant="-4" id="oM4-3T-KNu"/>
+                            <constraint firstItem="0CL-by-AyF" firstAttribute="top" secondItem="fKX-pj-Mln" secondAttribute="bottom" constant="8" id="Ui1-La-Rn4"/>
                             <constraint firstItem="0t8-XM-Eti" firstAttribute="leading" secondItem="RGQ-pi-upY" secondAttribute="leadingMargin" constant="-8" id="qd7-1f-I0t"/>
-                            <constraint firstItem="0CL-by-AyF" firstAttribute="top" secondItem="fKX-pj-Mln" secondAttribute="bottom" constant="8" symbolic="YES" id="t2r-na-Woa"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Display" id="kQ0-sf-HeD"/>
                     <connections>
                         <outlet property="creationDateLabel" destination="0CL-by-AyF" id="Z8C-GO-dAb"/>
-                        <outlet property="modificationDateLabel" destination="GLP-gh-TWn" id="HL7-a0-CgS"/>
                         <outlet property="textView" destination="0t8-XM-Eti" id="NRB-yQ-iSp"/>
                     </connections>
                 </viewController>
