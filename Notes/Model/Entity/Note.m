@@ -10,4 +10,11 @@
 
 @implementation Note
 
+#pragma mark - MTLJSONSerializing
+
++ (NSDictionary *)JSONKeyPathsByPropertyKey {
+  
+  return @{@"creationDate": @"da", @"modificationDate": @"dm", @"text": @"body"};
+}
+
 @end

@@ -28,19 +28,4 @@ static NSString *const TokenParameter = @"Token";
 
 @interface Constants : NSObject
 
-
-/*static NSString *const NoteBody = @"body";
-static NSString *const AddingNoteParameter = @"add_entry";
-static NSString *const ReusableCellIdentifier = @"Cell Identifier";
-static NSString *const ShowDetailControllerSeque = @"showDetail";
-static NSString *const ShowCompopseControllerSeque = @"showCompose";
-static NSString *const NoteModificationDate = @"dm";
-static NSString *const NoteCreationDate = @"da";
-static NSString *const GettingNotesParameter = @"get_entries";
-static NSString *const SessionName = @"session";
-static NSString *const ParameterName = @"a";
-static NSString *const NewSessionParameter = @"new_session";
-static NSString *const Title = @"Notes";
-static NSString *const ServerData = @"data";*/
-
 @end

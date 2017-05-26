@@ -18,10 +18,8 @@
 - (IBAction)save:(id)sender {
   
   NSDictionary *parameters = @{ParameterName: AddingNoteParameter,SessionName: self.session, NoteBody : self.textField.text};
-  
   [AccessDataProvider request:parameters completionHandler:^(id data) {
   }];
 }
-
 
 @end

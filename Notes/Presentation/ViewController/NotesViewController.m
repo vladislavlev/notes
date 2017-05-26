@@ -44,25 +44,24 @@
       self.session = data[SessionName];
       [userDefaults setObject:data[SessionName] forKey:SessionName];
       [self updateNotes];
-      
     }];
     return;
   }
+  
   self.session = [userDefaults objectForKey:SessionName];
 }
 
 #pragma mark - IBActions
 
 - (IBAction)addButtonPressed:(id)sender {
-  
   [self performSegueWithIdentifier:ShowCompopseControllerSeque sender:self];
-  
 }
 
 #pragma mark - Update
 
 - (void)updateNotes {
-  
+  [[UIApplication sharedApplication]
+   setNetworkActivityIndicatorVisible:YES];
   if (!self.session) return;
   NSDictionary *parameters = @{ParameterName: GettingNotesParameter,SessionName: self.session};
   [AccessDataProvider request:parameters completionHandler:^(id data) {
@@ -71,20 +70,21 @@
     NSUInteger notesCount = [notesData count];
     [self.notes removeAllObjects];
     
-    
     for (int i = 0; i < notesCount; i++)
     {
       NSDictionary *noteData = notesData[i];
       NSError *error = nil;
       Note *note = [MTLJSONAdapter modelOfClass:Note.class fromJSONDictionary:noteData error:&error];
-      
-     /* Note *note = [[Note alloc] init];
-      note.text = noteData[NoteBody];
-      note.creationDate = noteData[NoteCreationDate];
-      note.modificationDate = noteData[NoteModificationDate];*/
       [self.notes addObject: note];
     }
-    [self.tableView reloadData];
+    
+    dispatch_async(dispatch_get_main_queue(), ^{
+      
+      [[UIApplication sharedApplication]
+       setNetworkActivityIndicatorVisible:NO];
+      [self.tableView reloadData];
+      
+    });
   }];
 }
 
@@ -97,7 +97,6 @@
     ComposeViewController *ComposeViewController = [segue destinationViewController];
     ComposeViewController.session = self.session;
   }
-  
   else if ([[segue identifier] isEqualToString:ShowDetailControllerSeque]) {
     
     DisplayViewController *displayViewController = [segue destinationViewController];
@@ -124,7 +123,6 @@
   TableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ReusableCellIdentifier forIndexPath:indexPath];
   
   Note *note = self.notes[indexPath.row];
-  
   cell.creationDateLabel.text = [note.creationDate convertToDate];
   cell.textView.text = note.text;
   return cell;

@@ -20,7 +20,6 @@
   self.creationDateLabel.text = [self.note.creationDate convertToDate];
   self.textView.text = self.note.text;
   if ([self.note.modificationDate isEqualToString:self.note.creationDate]) return;
-
 }
 
 @end

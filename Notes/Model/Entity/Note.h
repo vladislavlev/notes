@@ -10,7 +10,6 @@
 #import "MTLModel.h"
 #import "MTLJSONAdapter.h"
 
-
 @interface Note : MTLModel <MTLJSONSerializing>
 
 #pragma mark - Properties

@@ -10,9 +10,6 @@
 #import "Note.h"
 #import "Constants.h"
 
-#pragma mark - Constants
-
-
 @implementation AccessDataProvider
 
 + (void)request:(id)parameters completionHandler:(void (^)(id data))completionHandler  {
@@ -23,13 +20,10 @@
   manager.requestSerializer = serializer;
   [manager.requestSerializer setValue:Token forHTTPHeaderField:TokenParameter];
   [manager POST:Url parameters:parameters progress:nil success:^(NSURLSessionDataTask *task, id responseObject) {
-    
     id data = responseObject[ServerData];
-    
     completionHandler(data);
   } failure:^(NSURLSessionDataTask *task, NSError *error) {
     NSLog(@"Error: %@", error);
-    
   }];
 }
 

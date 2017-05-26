@@ -176,7 +176,6 @@
 				6D3189CD187C422A00994DDF /* Notes-Prefix.pch */,
 				6D3189CB187C422A00994DDF /* main.m */,
 			);
-			name = "Supporting Files";
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
@@ -195,7 +194,6 @@
 				6D3189E1187C422A00994DDF /* InfoPlist.strings */,
 				6D3189E0187C422A00994DDF /* NotesTests-Info.plist */,
 			);
-			name = "Supporting Files";
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
@@ -204,7 +202,6 @@
 			children = (
 				75D01C141ED459FD00634FB8 /* Entity */,
 			);
-			name = Model;
 			path = Model;
 			sourceTree = "<group>";
 		};
@@ -215,7 +212,6 @@
 				6D3189CF187C422A00994DDF /* AppDelegate.m */,
 				75613EEC1ED1E0DD008D7C04 /* Constants.h */,
 			);
-			name = Application;
 			path = Application;
 			sourceTree = "<group>";
 		};
@@ -226,7 +222,6 @@
 				75D01C161ED45ABD00634FB8 /* ViewController */,
 				6D3189F4187C42BD00994DDF /* Storyboard.storyboard */,
 			);
-			name = Presentation;
 			path = Presentation;
 			sourceTree = "<group>";
 		};
@@ -236,7 +231,6 @@
 				751475AD1EBC995000952A1D /* Note.h */,
 				751475AE1EBC995000952A1D /* Note.m */,
 			);
-			name = Entity;
 			path = Entity;
 			sourceTree = "<group>";
 		};
@@ -245,7 +239,6 @@
 			children = (
 				6D3189F2187C42A800994DDF /* Images.xcassets */,
 			);
-			name = Resourses;
 			path = Resourses;
 			sourceTree = "<group>";
 		};
@@ -259,7 +252,6 @@
 				6D3189EF187C427400994DDF /* NotesViewController.h */,
 				6D3189F0187C427400994DDF /* NotesViewController.m */,
 			);
-			name = ViewController;
 			path = ViewController;
 			sourceTree = "<group>";
 		};
@@ -269,7 +261,6 @@
 				6190AF3D199659AE00E12D44 /* TableViewCell.h */,
 				6190AF3E199659AE00E12D44 /* TableViewCell.m */,
 			);
-			name = View;
 			path = View;
 			sourceTree = "<group>";
 		};
@@ -278,7 +269,6 @@
 			children = (
 				75D01C191ED45B2C00634FB8 /* Categories */,
 			);
-			name = Utils;
 			path = Utils;
 			sourceTree = "<group>";
 		};
@@ -288,7 +278,6 @@
 				7525F4A91ECF1E0E004BCDAC /* NSString+DateConvertation.h */,
 				7525F4AA1ECF1E0E004BCDAC /* NSString+DateConvertation.m */,
 			);
-			name = Categories;
 			path = Categories;
 			sourceTree = "<group>";
 		};
@@ -298,7 +287,6 @@
 				75946C1E1EC1F41E000123B4 /* AccessDataProvider.h */,
 				75946C1F1EC1F41E000123B4 /* AccessDataProvider.m */,
 			);
-			name = Access;
 			path = Access;
 			sourceTree = "<group>";
 		};
@@ -307,7 +295,6 @@
 			children = (
 				75D01C1A1ED45C7F00634FB8 /* Access */,
 			);
-			name = "Business Logic";
 			path = "Business Logic";
 			sourceTree = "<group>";
 		};
@@ -653,6 +640,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Notes/Supporting Files/Notes-Prefix.pch";
 				INFOPLIST_FILE = "Notes/Supporting Files/Notes-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vladislavlev.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -669,6 +657,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Notes/Supporting Files/Notes-Prefix.pch";
 				INFOPLIST_FILE = "Notes/Supporting Files/Notes-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vladislavlev.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
