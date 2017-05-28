@@ -22,7 +22,6 @@ static NSString *const GettingNotesParameter = @"get_entries";
 static NSString *const SessionName = @"session";
 static NSString *const ParameterName = @"a";
 static NSString *const NewSessionParameter = @"new_session";
-static NSString *const Title = @"Notes";
 static NSString *const ServerData = @"data";
 static NSString *const TokenParameter = @"Token";
 

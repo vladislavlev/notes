@@ -8,7 +8,7 @@
 
 #import "DisplayViewController.h"
 #import "NSString+DateConvertation.h"
-
+#import "UIColor+Layout.h"
 
 @implementation DisplayViewController
 
@@ -17,9 +17,9 @@
 - (void)viewDidLoad
 {
   [super viewDidLoad];
+  self.view.backgroundColor = [UIColor backgroundColor];
   self.creationDateLabel.text = [self.note.creationDate convertToDate];
   self.textView.text = self.note.text;
-  if ([self.note.modificationDate isEqualToString:self.note.creationDate]) return;
 }
 
 @end

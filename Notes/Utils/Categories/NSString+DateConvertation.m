@@ -16,7 +16,7 @@
   double timeDifference = secondsSince1970 - [self intValue];
   NSDate *date = [NSDate dateWithTimeInterval:-timeDifference sinceDate:now];
   NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-  [formatter setDateFormat:@"dd MMMM yyyy HH:mm"];
+  [formatter setDateFormat:@"dd MMMM yyyy, HH:mm"];
   NSString *stringFromDate = [formatter stringFromDate:date];
   return stringFromDate;
 }

@@ -12,7 +12,7 @@
 
 #pragma mark - IBOutlets
 
-@property (weak, nonatomic) IBOutlet UITextField *textField;
+@property (weak, nonatomic) IBOutlet UITextView *textView;
 
 #pragma mark - Properties
 

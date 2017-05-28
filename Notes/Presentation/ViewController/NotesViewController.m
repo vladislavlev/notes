@@ -15,6 +15,7 @@
 #import "NSString+DateConvertation.h"
 #import "Constants.h"
 #import "MTLJSONAdapter.h"
+#import "UIColor+Layout.h"
 
 @interface NotesViewController () <UINavigationControllerDelegate>
 
@@ -31,11 +32,15 @@
 
 - (void)viewDidLoad {
   [super viewDidLoad];
-  
+  self.navigationController.navigationBar.tintColor = [UIColor themeColor];
+  self.tableView.backgroundColor = [UIColor backgroundColor];
+  [self.navigationController.navigationBar setBackgroundImage:[UIImage new]
+                           forBarMetrics:UIBarMetricsDefault];
+  self.navigationController.navigationBar.shadowImage = [UIImage new];
+  self.navigationController.navigationBar.translucent = YES;
   self.tableView.tableFooterView = [[UIView alloc] init];
   self.notes = [NSMutableArray array];
   self.navigationController.delegate = self;
-  self.title = Title;
   NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
   
   if (![userDefaults stringForKey:SessionName]) {
@@ -47,7 +52,6 @@
     }];
     return;
   }
-  
   self.session = [userDefaults objectForKey:SessionName];
 }
 
@@ -83,7 +87,6 @@
       [[UIApplication sharedApplication]
        setNetworkActivityIndicatorVisible:NO];
       [self.tableView reloadData];
-      
     });
   }];
 }

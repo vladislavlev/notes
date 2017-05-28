@@ -28,6 +28,7 @@
 		7525F4AB1ECF1E0E004BCDAC /* NSString+DateConvertation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7525F4AA1ECF1E0E004BCDAC /* NSString+DateConvertation.m */; };
 		753078621EBB31EE00D152AF /* DisplayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 753078611EBB31EE00D152AF /* DisplayViewController.m */; };
 		75946C201EC1F41E000123B4 /* AccessDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 75946C1F1EC1F41E000123B4 /* AccessDataProvider.m */; };
+		75BB42821ED98067009D9F53 /* UIColor+Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = 75BB42811ED98066009D9F53 /* UIColor+Layout.m */; };
 		75D756931EC0A21B00B8C1FF /* ComposeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75D756921EC0A21B00B8C1FF /* ComposeViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -76,6 +77,8 @@
 		75613EEC1ED1E0DD008D7C04 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		75946C1E1EC1F41E000123B4 /* AccessDataProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccessDataProvider.h; sourceTree = "<group>"; };
 		75946C1F1EC1F41E000123B4 /* AccessDataProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccessDataProvider.m; sourceTree = "<group>"; };
+		75BB42801ED98066009D9F53 /* UIColor+Layout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Layout.h"; sourceTree = "<group>"; };
+		75BB42811ED98066009D9F53 /* UIColor+Layout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Layout.m"; sourceTree = "<group>"; };
 		75D756911EC0A21B00B8C1FF /* ComposeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComposeViewController.h; sourceTree = "<group>"; };
 		75D756921EC0A21B00B8C1FF /* ComposeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComposeViewController.m; sourceTree = "<group>"; };
 		E6843E92860D688582434966 /* Pods-NotesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotesTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NotesTests/Pods-NotesTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -122,8 +125,8 @@
 		6D3189B3187C422A00994DDF = {
 			isa = PBXGroup;
 			children = (
-				6D3189BE187C422A00994DDF /* Frameworks */,
 				6D3189C5187C422A00994DDF /* Notes */,
+				6D3189BE187C422A00994DDF /* Frameworks */,
 				6D3189DE187C422A00994DDF /* NotesTests */,
 				2FDD111D1CCE9F27CEBB862F /* Pods */,
 				6D3189BD187C422A00994DDF /* Products */,
@@ -277,6 +280,8 @@
 			children = (
 				7525F4A91ECF1E0E004BCDAC /* NSString+DateConvertation.h */,
 				7525F4AA1ECF1E0E004BCDAC /* NSString+DateConvertation.m */,
+				75BB42801ED98066009D9F53 /* UIColor+Layout.h */,
+				75BB42811ED98066009D9F53 /* UIColor+Layout.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -353,7 +358,7 @@
 				ORGANIZATIONNAME = "Soheil Azarpour";
 				TargetAttributes = {
 					6D3189BB187C422A00994DDF = {
-						DevelopmentTeam = 2X468FT7VV;
+						DevelopmentTeam = 96GV48KWHY;
 					};
 					6D3189D6187C422A00994DDF = {
 						TestTargetID = 6D3189BB187C422A00994DDF;
@@ -498,6 +503,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6D3189CC187C422A00994DDF /* main.m in Sources */,
+				75BB42821ED98067009D9F53 /* UIColor+Layout.m in Sources */,
 				6D3189F1187C427400994DDF /* NotesViewController.m in Sources */,
 				6190AF3F199659AE00E12D44 /* TableViewCell.m in Sources */,
 				75946C201EC1F41E000123B4 /* AccessDataProvider.m in Sources */,
@@ -637,10 +643,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 96GV48KWHY;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Notes/Supporting Files/Notes-Prefix.pch";
 				INFOPLIST_FILE = "Notes/Supporting Files/Notes-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vladislavlev.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -654,10 +661,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 96GV48KWHY;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Notes/Supporting Files/Notes-Prefix.pch";
 				INFOPLIST_FILE = "Notes/Supporting Files/Notes-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vladislavlev.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
