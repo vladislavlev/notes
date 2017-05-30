@@ -32,8 +32,8 @@
 
 - (void)viewDidLoad {
   [super viewDidLoad];
-  self.navigationController.navigationBar.tintColor = [UIColor themeColor];
   self.tableView.backgroundColor = [UIColor backgroundColor];
+  self.navigationController.navigationBar.tintColor = [UIColor themeColor];
   [self.navigationController.navigationBar setBackgroundImage:[UIImage new]
                            forBarMetrics:UIBarMetricsDefault];
   self.navigationController.navigationBar.shadowImage = [UIImage new];

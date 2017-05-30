@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -15,50 +14,35 @@
             <objects>
                 <tableViewController title="Notes" id="z3Q-Gb-5xD" customClass="NotesViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="140" sectionHeaderHeight="22" sectionFooterHeight="22" id="aLn-yv-2Fp">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <color key="separatorColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell opaque="NO" contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell Identifier" rowHeight="128" id="2Qv-0X-9Yt" customClass="TableViewCell">
-                                <rect key="frame" x="0.0" y="22" width="375" height="128"/>
+                                <rect key="frame" x="0.0" y="22" width="320" height="128"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2Qv-0X-9Yt" id="HYC-jO-wgk">
-                                    <rect key="frame" x="0.0" y="0.0" width="342" height="128"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="127"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ioy-UB-WgE" userLabel="Text View">
-                                            <rect key="frame" x="8" y="8" width="334" height="100"/>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ioy-UB-WgE" userLabel="Text View">
+                                            <rect key="frame" x="8" y="8" width="274" height="100"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="100" id="DkR-QS-H2h"/>
-                                                <constraint firstAttribute="width" constant="334" id="dDz-hK-JSc"/>
-                                            </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                         </textView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="252" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="msY-X6-24q" userLabel="Creation Date Label">
-                                            <rect key="frame" x="119" y="104" width="140" height="15"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="252" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="msY-X6-24q" userLabel="Creation Date Label">
+                                            <rect key="frame" x="85" y="110" width="140" height="15"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="140" id="uiv-U5-bz0"/>
-                                                <constraint firstAttribute="height" constant="15" id="zGL-O2-Td0"/>
-                                            </constraints>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                    <constraints>
-                                        <constraint firstItem="Ioy-UB-WgE" firstAttribute="leading" secondItem="HYC-jO-wgk" secondAttribute="leading" constant="8" id="BdF-CA-BkZ"/>
-                                        <constraint firstItem="msY-X6-24q" firstAttribute="centerX" secondItem="HYC-jO-wgk" secondAttribute="centerX" constant="18" id="R1h-DM-Shn"/>
-                                        <constraint firstItem="msY-X6-24q" firstAttribute="bottom" secondItem="HYC-jO-wgk" secondAttribute="bottomMargin" id="XRD-r9-Ypm"/>
-                                        <constraint firstItem="msY-X6-24q" firstAttribute="top" secondItem="HYC-jO-wgk" secondAttribute="top" constant="104" id="Xil-KA-5ro"/>
-                                        <constraint firstItem="Ioy-UB-WgE" firstAttribute="top" secondItem="HYC-jO-wgk" secondAttribute="top" constant="8" id="hc4-79-Emf"/>
-                                        <constraint firstAttribute="bottom" secondItem="Ioy-UB-WgE" secondAttribute="bottom" constant="19" id="uBr-ja-4Vk"/>
-                                        <constraint firstAttribute="trailing" secondItem="Ioy-UB-WgE" secondAttribute="trailing" id="xec-UD-hkd"/>
-                                    </constraints>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -80,6 +64,8 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="568"/>
                     <connections>
                         <segue destination="3US-f6-49U" kind="push" identifier="showDetail" id="L68-55-Qw8"/>
                         <segue destination="EmJ-G3-Ybe" kind="push" identifier="showCompose" id="P7V-FC-HjQ"/>
@@ -94,6 +80,8 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2HI-1E-ew3" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="568"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="kGt-YK-eyc">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -112,64 +100,63 @@
             <objects>
                 <viewController storyboardIdentifier="DisplayViewController" title="Display" automaticallyAdjustsScrollViewInsets="NO" id="3US-f6-49U" customClass="DisplayViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="fKX-pj-Mln"/>
-                        <viewControllerLayoutGuide type="bottom" id="teI-fG-iVd"/>
+                        <viewControllerLayoutGuide type="top" id="rJ1-6O-BcL"/>
+                        <viewControllerLayoutGuide type="bottom" id="Avl-W5-YoL"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="RGQ-pi-upY">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z5N-mi-rrG">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                                 <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0t8-XM-Eti" userLabel="Text View">
-                                        <rect key="frame" x="8" y="30" width="359" height="573"/>
-                                        <color key="backgroundColor" red="0.31862329169999998" green="0.20932047149999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="359" id="VCt-gg-jDE"/>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="573" id="Yso-dV-ESh"/>
-                                        </constraints>
-                                        <mutableString key="text">Bacon ipsum dolor sit amet drumstick meatloaf filet mignon ham t-bone andouille meatball venison cow capicola jerky shankle shoulder ground round. Shank filet mignon pork chop ham hock, short ribs jerky prosciutto tongue porchetta. Biltong kevin strip steak tail jowl jerky boudin drumstick pastrami bresaola. Sirloin tail shoulder salami, hamburger beef doner turducken chuck boudin kielbasa sausage pork loin. Ball tip leberkas fatback, pork chop tail ham ribeye. Bresaola pancetta jerky beef kielbasa frankfurter, corned beef filet mignon ribeye tongue porchetta. Prosciutto short loin sirloin doner brisket jerky swine sausage bresaola chuck. Meatloaf pork chop ribeye bacon jerky turducken, andouille pork belly beef ribs ham hock leberkas. Andouille tri-tip capicola beef t-bone shank tenderloin turducken ball tip salami pork belly shankle. Kielbasa pastrami brisket, kevin spare ribs swine tail beef jerky venison filet mignon. Kevin leberkas ball tip, brisket bresaola chuck meatloaf beef doner drumstick hamburger capicola chicken. Tri-tip biltong drumstick pork prosciutto strip steak pastrami brisket shank hamburger flank tail cow. Pastrami beef ribs ribeye boudin spare ribs pork loin. Meatloaf tail pork belly strip steak doner. T-bone meatball pastrami, pork strip steak salami tail beef boudin leberkas. Venison t-bone fatback, pig brisket pork loin landjaeger turkey tri-tip biltong. Drumstick tri-tip hamburger boudin meatball pork pork chop short ribs chuck doner t-bone bacon frankfurter porchetta beef. Turkey cow meatball andouille pancetta, flank strip steak ham hock. Frankfurter corned beef rump turducken brisket, jerky short loin flank tri-tip ball tip ham hock swine spare ribs.</mutableString>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="252" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0CL-by-AyF" userLabel="Creation Date Label">
-                                        <rect key="frame" x="117" y="0.0" width="140" height="15"/>
+                                        <rect key="frame" x="89" y="0.0" width="140" height="15"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="140" id="JEe-w5-Krn"/>
-                                            <constraint firstAttribute="height" constant="15" id="yNJ-GL-IHU"/>
+                                            <constraint firstAttribute="height" constant="15" id="nkm-VZ-NEn"/>
+                                            <constraint firstAttribute="width" constant="140" id="rn8-zd-LAe"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mwv-oE-MwG" userLabel="Text Label">
+                                        <rect key="frame" x="7" y="30" width="304" height="953.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="474" id="Cqk-ic-7HH"/>
+                                            <constraint firstAttribute="width" constant="304" id="cmc-Y9-gez"/>
+                                        </constraints>
+                                        <string key="text">Bacon ipsum dolor sit amet drumstick meatloaf filet mignon ham t-bone andouille meatball venison cow capicola jerky shankle shoulder ground round. Shank filet mignon pork chop ham hock, short ribs jerky prosciutto tongue porchetta. Biltong kevin strip steak tail jowl jerky boudin drumstick pastrami bresaola. Sirloin tail shoulder salami, hamburger beef doner turducken chuck boudin kielbasa sausage pork loin. Ball tip leberkas fatback, pork chop tail ham ribeye. Bresaola pancetta jerky beef kielbasa frankfurter, corned beef filet mignon ribeye tongue porchetta. Prosciutto short loin sirloin doner brisket jerky swine sausage bresaola chuck. Meatloaf pork chop ribeye bacon jerky turducken, andouille pork belly beef ribs ham hock leberkas. Andouille tri-tip capicola beef t-bone shank tenderloin turducken ball tip salami pork belly shankle. Kielbasa pastrami brisket, kevin spare ribs swine tail beef jerky venison filet mignon. Kevin leberkas ball tip, brisket bresaola chuck meatloaf beef doner drumstick hamburger capicola chicken. Tri-tip biltong drumstick pork prosciutto strip steak pastrami brisket shank hamburger flank tail cow. Pastrami beef ribs ribeye boudin spare ribs pork loin. Meatloaf tail pork belly strip steak doner. T-bone meatball pastrami, pork strip steak salami tail beef boudin leberkas. Venison t-bone fatback, pig brisket pork loin landjaeger turkey tri-tip biltong. Drumstick tri-tip hamburger boudin meatball pork pork chop short ribs chuck doner t-bone bacon frankfurter porchetta beef. Turkey cow meatball andouille pancetta, flank strip steak ham hock. Frankfurter corned beef rump turducken brisket, jerky short loin flank tri-tip ball tip ham hock swine spare ribs.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="0t8-XM-Eti" firstAttribute="top" secondItem="Z5N-mi-rrG" secondAttribute="top" constant="30" id="1Rm-vc-8ME"/>
-                                    <constraint firstAttribute="width" constant="375" id="1sK-Tc-KCT"/>
-                                    <constraint firstItem="0t8-XM-Eti" firstAttribute="leading" secondItem="Z5N-mi-rrG" secondAttribute="leading" constant="8" id="2wC-1S-Hp2"/>
-                                    <constraint firstAttribute="bottom" secondItem="0t8-XM-Eti" secondAttribute="bottom" id="5Tx-Nt-TIG"/>
-                                    <constraint firstAttribute="trailing" secondItem="0t8-XM-Eti" secondAttribute="trailing" constant="8" id="FP3-VD-N3h"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="603" id="GX2-hZ-Kd3"/>
-                                    <constraint firstItem="0CL-by-AyF" firstAttribute="leading" secondItem="Z5N-mi-rrG" secondAttribute="leading" constant="117" id="O9Q-Mq-uZG"/>
-                                    <constraint firstItem="0t8-XM-Eti" firstAttribute="top" secondItem="0CL-by-AyF" secondAttribute="bottom" constant="15" id="Q6s-4E-j6v"/>
-                                    <constraint firstItem="0CL-by-AyF" firstAttribute="top" secondItem="Z5N-mi-rrG" secondAttribute="top" id="X76-5Q-RbC"/>
-                                    <constraint firstAttribute="trailing" secondItem="0CL-by-AyF" secondAttribute="trailing" constant="118" id="i4l-OX-ZQX"/>
+                                    <constraint firstAttribute="bottom" secondItem="Mwv-oE-MwG" secondAttribute="bottom" id="Oym-2b-azr"/>
+                                    <constraint firstItem="0CL-by-AyF" firstAttribute="centerX" secondItem="Z5N-mi-rrG" secondAttribute="centerX" constant="-1" id="Qzg-5V-Cop"/>
+                                    <constraint firstItem="Mwv-oE-MwG" firstAttribute="centerX" secondItem="Z5N-mi-rrG" secondAttribute="centerX" constant="-1" id="R78-4I-dWa"/>
+                                    <constraint firstAttribute="width" constant="320" id="Rtj-aM-Gax"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="504" id="bev-Z9-ngq"/>
+                                    <constraint firstItem="0CL-by-AyF" firstAttribute="top" secondItem="Z5N-mi-rrG" secondAttribute="top" id="m04-Nb-Vd7"/>
+                                    <constraint firstItem="Mwv-oE-MwG" firstAttribute="top" secondItem="0CL-by-AyF" secondAttribute="bottom" constant="15" id="o2t-LM-UpI"/>
+                                    <constraint firstItem="Mwv-oE-MwG" firstAttribute="top" secondItem="0CL-by-AyF" secondAttribute="bottom" constant="15" id="uG7-dB-JXy"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Z5N-mi-rrG" firstAttribute="leading" secondItem="RGQ-pi-upY" secondAttribute="leading" id="2Vg-LQ-SUg"/>
-                            <constraint firstAttribute="bottom" secondItem="Z5N-mi-rrG" secondAttribute="bottom" id="JeA-Sa-JBP"/>
-                            <constraint firstItem="Z5N-mi-rrG" firstAttribute="top" secondItem="fKX-pj-Mln" secondAttribute="bottom" id="n90-8B-7Of"/>
-                            <constraint firstAttribute="trailing" secondItem="Z5N-mi-rrG" secondAttribute="trailing" id="wtV-Gx-OiL"/>
+                            <constraint firstItem="Z5N-mi-rrG" firstAttribute="top" secondItem="rJ1-6O-BcL" secondAttribute="bottom" id="Fv2-7Q-Wix"/>
+                            <constraint firstItem="Z5N-mi-rrG" firstAttribute="leading" secondItem="RGQ-pi-upY" secondAttribute="leading" id="UhD-W8-gOk"/>
+                            <constraint firstItem="Avl-W5-YoL" firstAttribute="top" secondItem="Z5N-mi-rrG" secondAttribute="bottom" id="cSR-hK-EfR"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="kQ0-sf-HeD"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="568"/>
                     <connections>
                         <outlet property="creationDateLabel" destination="0CL-by-AyF" id="Z8C-GO-dAb"/>
-                        <outlet property="textView" destination="0t8-XM-Eti" id="NRB-yQ-iSp"/>
+                        <outlet property="textLabel" destination="Mwv-oE-MwG" id="rSr-0m-yFe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="csy-BT-uEn" sceneMemberID="firstResponder"/>
@@ -181,26 +168,21 @@
             <objects>
                 <viewController title="Compose" automaticallyAdjustsScrollViewInsets="NO" id="EmJ-G3-Ybe" customClass="ComposeViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="dlk-6r-xV5"/>
-                        <viewControllerLayoutGuide type="bottom" id="bCR-0X-o6O"/>
+                        <viewControllerLayoutGuide type="top" id="sep-c0-SdQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="Euj-dk-dPy"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="dTj-ug-f5N">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ArK-jt-H8e" userLabel="Text View">
-                                <rect key="frame" x="8" y="64" width="359" height="603"/>
+                            <textView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ArK-jt-H8e" userLabel="Text View">
+                                <rect key="frame" x="8" y="64" width="304" height="504"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="ArK-jt-H8e" firstAttribute="bottom" secondItem="bCR-0X-o6O" secondAttribute="top" id="JHU-po-MLT"/>
-                            <constraint firstItem="ArK-jt-H8e" firstAttribute="top" secondItem="dlk-6r-xV5" secondAttribute="bottom" id="KEs-FA-Cur"/>
-                            <constraint firstItem="ArK-jt-H8e" firstAttribute="leading" secondItem="dTj-ug-f5N" secondAttribute="leadingMargin" constant="-8" id="LoD-BK-ndF"/>
-                            <constraint firstItem="ArK-jt-H8e" firstAttribute="centerX" secondItem="dTj-ug-f5N" secondAttribute="centerX" id="sjT-hO-qbz"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="tRP-MS-xsh">
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="kyF-pL-wq9">
@@ -210,6 +192,8 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="568"/>
                     <connections>
                         <outlet property="textView" destination="ArK-jt-H8e" id="RJs-TY-AJw"/>
                     </connections>

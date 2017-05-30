@@ -14,7 +14,7 @@
 #pragma mark - Properties
 
 @property (strong, nonatomic) Note *note;
-@property (weak, nonatomic) IBOutlet UITextView *textView;
+@property (weak, nonatomic) IBOutlet UILabel *textLabel;
 @property (weak, nonatomic) IBOutlet UILabel *creationDateLabel;
 
 @end
