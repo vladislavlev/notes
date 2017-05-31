@@ -31,4 +31,38 @@
   }];
 }
 
+#pragma mark - UIKit
+
+- (void) viewWillAppear:(BOOL)paramAnimated{
+  [super viewWillAppear:paramAnimated];
+  
+  [[NSNotificationCenter defaultCenter] addObserver:self
+                                           selector:@selector(handleKeyboardDidShow:)
+                                               name:UIKeyboardDidShowNotification object:nil];
+  [[NSNotificationCenter defaultCenter] addObserver:self
+                                           selector:@selector(handleKeyboardWillHide:)
+                                               name:UIKeyboardWillHideNotification
+                                             object:nil];
+}
+
+#pragma mark - Notifications
+
+- (void) handleKeyboardDidShow:(NSNotification *)paramNotification{
+  
+  NSValue *keyboardRectAsObject =
+  [[paramNotification userInfo]
+   objectForKey:UIKeyboardFrameEndUserInfoKey];
+  CGRect keyboardRect = CGRectZero;
+  [keyboardRectAsObject getValue:&keyboardRect];
+  self.textView.contentInset = UIEdgeInsetsMake(0.0f,
+                                                0.0f,
+                                                keyboardRect.size.height,
+                                                0.0f);
+}
+
+- (void) handleKeyboardWillHide:(NSNotification *)paramNotification{
+  
+  self.textView.contentInset = UIEdgeInsetsZero;
+}
+
 @end

@@ -13,28 +13,28 @@
         <scene sceneID="aHY-G2-1n7">
             <objects>
                 <tableViewController title="Notes" id="z3Q-Gb-5xD" customClass="NotesViewController" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="140" sectionHeaderHeight="22" sectionFooterHeight="22" id="aLn-yv-2Fp">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="188" sectionHeaderHeight="22" sectionFooterHeight="22" id="aLn-yv-2Fp">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <color key="separatorColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell opaque="NO" contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell Identifier" rowHeight="128" id="2Qv-0X-9Yt" customClass="TableViewCell">
-                                <rect key="frame" x="0.0" y="22" width="320" height="128"/>
+                            <tableViewCell opaque="NO" contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell Identifier" id="2Qv-0X-9Yt" customClass="TableViewCell">
+                                <rect key="frame" x="0.0" y="22" width="320" height="188"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2Qv-0X-9Yt" id="HYC-jO-wgk">
-                                    <rect key="frame" x="0.0" y="0.0" width="287" height="127"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="188"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ioy-UB-WgE" userLabel="Text View">
-                                            <rect key="frame" x="8" y="8" width="274" height="100"/>
+                                            <rect key="frame" x="8" y="8" width="274" height="150"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                         </textView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="252" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="msY-X6-24q" userLabel="Creation Date Label">
-                                            <rect key="frame" x="85" y="110" width="140" height="15"/>
+                                            <rect key="frame" x="85" y="159" width="140" height="15"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
@@ -107,7 +107,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z5N-mi-rrG">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z5N-mi-rrG">
                                 <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="252" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0CL-by-AyF" userLabel="Creation Date Label">
@@ -120,35 +120,35 @@
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mwv-oE-MwG" userLabel="Text Label">
-                                        <rect key="frame" x="7" y="30" width="304" height="953.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mwv-oE-MwG" userLabel="Text Label">
+                                        <rect key="frame" x="7" y="135" width="304" height="474"/>
                                         <constraints>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="474" id="Cqk-ic-7HH"/>
                                             <constraint firstAttribute="width" constant="304" id="cmc-Y9-gez"/>
                                         </constraints>
-                                        <string key="text">Bacon ipsum dolor sit amet drumstick meatloaf filet mignon ham t-bone andouille meatball venison cow capicola jerky shankle shoulder ground round. Shank filet mignon pork chop ham hock, short ribs jerky prosciutto tongue porchetta. Biltong kevin strip steak tail jowl jerky boudin drumstick pastrami bresaola. Sirloin tail shoulder salami, hamburger beef doner turducken chuck boudin kielbasa sausage pork loin. Ball tip leberkas fatback, pork chop tail ham ribeye. Bresaola pancetta jerky beef kielbasa frankfurter, corned beef filet mignon ribeye tongue porchetta. Prosciutto short loin sirloin doner brisket jerky swine sausage bresaola chuck. Meatloaf pork chop ribeye bacon jerky turducken, andouille pork belly beef ribs ham hock leberkas. Andouille tri-tip capicola beef t-bone shank tenderloin turducken ball tip salami pork belly shankle. Kielbasa pastrami brisket, kevin spare ribs swine tail beef jerky venison filet mignon. Kevin leberkas ball tip, brisket bresaola chuck meatloaf beef doner drumstick hamburger capicola chicken. Tri-tip biltong drumstick pork prosciutto strip steak pastrami brisket shank hamburger flank tail cow. Pastrami beef ribs ribeye boudin spare ribs pork loin. Meatloaf tail pork belly strip steak doner. T-bone meatball pastrami, pork strip steak salami tail beef boudin leberkas. Venison t-bone fatback, pig brisket pork loin landjaeger turkey tri-tip biltong. Drumstick tri-tip hamburger boudin meatball pork pork chop short ribs chuck doner t-bone bacon frankfurter porchetta beef. Turkey cow meatball andouille pancetta, flank strip steak ham hock. Frankfurter corned beef rump turducken brisket, jerky short loin flank tri-tip ball tip ham hock swine spare ribs.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Mwv-oE-MwG" secondAttribute="trailing" constant="9" id="3EI-xF-L9V"/>
+                                    <constraint firstAttribute="bottom" secondItem="Mwv-oE-MwG" secondAttribute="bottom" id="J0u-sA-b2p"/>
                                     <constraint firstAttribute="bottom" secondItem="Mwv-oE-MwG" secondAttribute="bottom" id="Oym-2b-azr"/>
                                     <constraint firstItem="0CL-by-AyF" firstAttribute="centerX" secondItem="Z5N-mi-rrG" secondAttribute="centerX" constant="-1" id="Qzg-5V-Cop"/>
                                     <constraint firstItem="Mwv-oE-MwG" firstAttribute="centerX" secondItem="Z5N-mi-rrG" secondAttribute="centerX" constant="-1" id="R78-4I-dWa"/>
                                     <constraint firstAttribute="width" constant="320" id="Rtj-aM-Gax"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="504" id="bev-Z9-ngq"/>
                                     <constraint firstItem="0CL-by-AyF" firstAttribute="top" secondItem="Z5N-mi-rrG" secondAttribute="top" id="m04-Nb-Vd7"/>
-                                    <constraint firstItem="Mwv-oE-MwG" firstAttribute="top" secondItem="0CL-by-AyF" secondAttribute="bottom" constant="15" id="o2t-LM-UpI"/>
-                                    <constraint firstItem="Mwv-oE-MwG" firstAttribute="top" secondItem="0CL-by-AyF" secondAttribute="bottom" constant="15" id="uG7-dB-JXy"/>
+                                    <constraint firstItem="Mwv-oE-MwG" firstAttribute="centerY" secondItem="Z5N-mi-rrG" secondAttribute="centerY" constant="120" id="pU2-Zm-fME"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Z5N-mi-rrG" firstAttribute="top" secondItem="rJ1-6O-BcL" secondAttribute="bottom" id="Fv2-7Q-Wix"/>
                             <constraint firstItem="Z5N-mi-rrG" firstAttribute="leading" secondItem="RGQ-pi-upY" secondAttribute="leading" id="UhD-W8-gOk"/>
                             <constraint firstItem="Avl-W5-YoL" firstAttribute="top" secondItem="Z5N-mi-rrG" secondAttribute="bottom" id="cSR-hK-EfR"/>
+                            <constraint firstItem="Z5N-mi-rrG" firstAttribute="top" secondItem="RGQ-pi-upY" secondAttribute="top" constant="64" id="kZu-CH-6Pc"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="kQ0-sf-HeD"/>
@@ -175,14 +175,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ArK-jt-H8e" userLabel="Text View">
+                            <textView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ArK-jt-H8e" userLabel="Text View">
                                 <rect key="frame" x="8" y="64" width="304" height="504"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ArK-jt-H8e" secondAttribute="trailing" constant="8" id="Oaj-fC-I8e"/>
+                            <constraint firstItem="ArK-jt-H8e" firstAttribute="top" secondItem="sep-c0-SdQ" secondAttribute="bottom" id="QUi-eU-Rda"/>
+                            <constraint firstItem="Euj-dk-dPy" firstAttribute="top" secondItem="ArK-jt-H8e" secondAttribute="bottom" id="Vml-4z-dvF"/>
+                            <constraint firstItem="ArK-jt-H8e" firstAttribute="leading" secondItem="dTj-ug-f5N" secondAttribute="leading" constant="8" id="foX-gh-Snd"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="tRP-MS-xsh">
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="kyF-pL-wq9">

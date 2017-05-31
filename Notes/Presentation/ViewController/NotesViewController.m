@@ -55,6 +55,13 @@
   self.session = [userDefaults objectForKey:SessionName];
 }
 
+- (void)viewDidAppear:(BOOL)animated {
+ // [[[UIApplication sharedApplication] keyWindow] setBackgroundColor:[UIColor clearColor]];
+  self.tableView.contentInset = UIEdgeInsetsMake(64.0f, 0.0f, 0.0f, 0.0f);
+  
+ // [self.tableView setFrame:CGRectMake(0.0f, 64.0f, 320.0f, 504.0f)];
+}
+
 #pragma mark - IBActions
 
 - (IBAction)addButtonPressed:(id)sender {
