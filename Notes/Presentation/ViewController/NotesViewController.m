@@ -55,11 +55,6 @@
   self.session = [userDefaults objectForKey:SessionName];
 }
 
-- (void)viewDidAppear:(BOOL)animated {
-
-  self.tableView.contentInset = UIEdgeInsetsMake(64.0f, 0.0f, 0.0f, 0.0f);
-}
-
 #pragma mark - IBActions
 
 - (IBAction)addButtonPressed:(id)sender {
