@@ -20,6 +20,7 @@
   self.view.backgroundColor = [UIColor backgroundColor];
   self.creationDateLabel.text = [self.note.creationDate convertToDate];
   self.textLabel.text = self.note.text;
+  [self.textLabel sizeToFit];
 }
 
 @end

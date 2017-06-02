@@ -23,7 +23,7 @@
                                 <rect key="frame" x="0.0" y="22" width="320" height="188"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2Qv-0X-9Yt" id="HYC-jO-wgk">
-                                    <rect key="frame" x="0.0" y="0.0" width="287" height="188"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="187"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ioy-UB-WgE" userLabel="Text View">
@@ -120,8 +120,8 @@
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mwv-oE-MwG" userLabel="Text Label">
-                                        <rect key="frame" x="7" y="135" width="304" height="474"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="clip" numberOfLines="0" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mwv-oE-MwG" userLabel="Text Label">
+                                        <rect key="frame" x="7" y="30" width="304" height="474"/>
                                         <constraints>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="474" id="Cqk-ic-7HH"/>
                                             <constraint firstAttribute="width" constant="304" id="cmc-Y9-gez"/>
@@ -129,18 +129,18 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
+                                        <size key="shadowOffset" width="0.0" height="0.0"/>
                                     </label>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="Mwv-oE-MwG" secondAttribute="trailing" constant="9" id="3EI-xF-L9V"/>
-                                    <constraint firstAttribute="bottom" secondItem="Mwv-oE-MwG" secondAttribute="bottom" id="J0u-sA-b2p"/>
+                                    <constraint firstItem="Mwv-oE-MwG" firstAttribute="top" secondItem="Z5N-mi-rrG" secondAttribute="top" constant="30" id="7mf-MG-80f"/>
                                     <constraint firstAttribute="bottom" secondItem="Mwv-oE-MwG" secondAttribute="bottom" id="Oym-2b-azr"/>
                                     <constraint firstItem="0CL-by-AyF" firstAttribute="centerX" secondItem="Z5N-mi-rrG" secondAttribute="centerX" constant="-1" id="Qzg-5V-Cop"/>
                                     <constraint firstItem="Mwv-oE-MwG" firstAttribute="centerX" secondItem="Z5N-mi-rrG" secondAttribute="centerX" constant="-1" id="R78-4I-dWa"/>
                                     <constraint firstAttribute="width" constant="320" id="Rtj-aM-Gax"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="504" id="bev-Z9-ngq"/>
                                     <constraint firstItem="0CL-by-AyF" firstAttribute="top" secondItem="Z5N-mi-rrG" secondAttribute="top" id="m04-Nb-Vd7"/>
-                                    <constraint firstItem="Mwv-oE-MwG" firstAttribute="centerY" secondItem="Z5N-mi-rrG" secondAttribute="centerY" constant="120" id="pU2-Zm-fME"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
