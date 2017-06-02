@@ -121,9 +121,9 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="clip" numberOfLines="0" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mwv-oE-MwG" userLabel="Text Label">
-                                        <rect key="frame" x="7" y="30" width="304" height="474"/>
+                                        <rect key="frame" x="7" y="30" width="304" height="74"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="474" id="Cqk-ic-7HH"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="74" id="Cqk-ic-7HH"/>
                                             <constraint firstAttribute="width" constant="304" id="cmc-Y9-gez"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
