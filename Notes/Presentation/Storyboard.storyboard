@@ -23,7 +23,7 @@
                                 <rect key="frame" x="0.0" y="22" width="320" height="188"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2Qv-0X-9Yt" id="HYC-jO-wgk">
-                                    <rect key="frame" x="0.0" y="0.0" width="287" height="187"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="188"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ioy-UB-WgE" userLabel="Text View">
@@ -108,10 +108,10 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z5N-mi-rrG">
-                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="252" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0CL-by-AyF" userLabel="Creation Date Label">
-                                        <rect key="frame" x="89" y="0.0" width="140" height="15"/>
+                                        <rect key="frame" x="89" y="74" width="140" height="15"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="15" id="nkm-VZ-NEn"/>
                                             <constraint firstAttribute="width" constant="140" id="rn8-zd-LAe"/>
@@ -121,9 +121,9 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="clip" numberOfLines="0" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mwv-oE-MwG" userLabel="Text Label">
-                                        <rect key="frame" x="7" y="30" width="304" height="74"/>
+                                        <rect key="frame" x="7" y="104" width="304" height="10"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="74" id="Cqk-ic-7HH"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="10" id="Cqk-ic-7HH"/>
                                             <constraint firstAttribute="width" constant="304" id="cmc-Y9-gez"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -134,13 +134,13 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="Mwv-oE-MwG" secondAttribute="trailing" constant="9" id="3EI-xF-L9V"/>
-                                    <constraint firstItem="Mwv-oE-MwG" firstAttribute="top" secondItem="Z5N-mi-rrG" secondAttribute="top" constant="30" id="7mf-MG-80f"/>
+                                    <constraint firstItem="Mwv-oE-MwG" firstAttribute="top" secondItem="Z5N-mi-rrG" secondAttribute="top" constant="104" id="7mf-MG-80f"/>
                                     <constraint firstAttribute="bottom" secondItem="Mwv-oE-MwG" secondAttribute="bottom" id="Oym-2b-azr"/>
                                     <constraint firstItem="0CL-by-AyF" firstAttribute="centerX" secondItem="Z5N-mi-rrG" secondAttribute="centerX" constant="-1" id="Qzg-5V-Cop"/>
                                     <constraint firstItem="Mwv-oE-MwG" firstAttribute="centerX" secondItem="Z5N-mi-rrG" secondAttribute="centerX" constant="-1" id="R78-4I-dWa"/>
                                     <constraint firstAttribute="width" constant="320" id="Rtj-aM-Gax"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="504" id="bev-Z9-ngq"/>
-                                    <constraint firstItem="0CL-by-AyF" firstAttribute="top" secondItem="Z5N-mi-rrG" secondAttribute="top" id="m04-Nb-Vd7"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="568" id="bev-Z9-ngq"/>
+                                    <constraint firstItem="0CL-by-AyF" firstAttribute="top" secondItem="Z5N-mi-rrG" secondAttribute="top" constant="74" id="m04-Nb-Vd7"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
@@ -148,7 +148,7 @@
                         <constraints>
                             <constraint firstItem="Z5N-mi-rrG" firstAttribute="leading" secondItem="RGQ-pi-upY" secondAttribute="leading" id="UhD-W8-gOk"/>
                             <constraint firstItem="Avl-W5-YoL" firstAttribute="top" secondItem="Z5N-mi-rrG" secondAttribute="bottom" id="cSR-hK-EfR"/>
-                            <constraint firstItem="Z5N-mi-rrG" firstAttribute="top" secondItem="RGQ-pi-upY" secondAttribute="top" constant="64" id="kZu-CH-6Pc"/>
+                            <constraint firstItem="Z5N-mi-rrG" firstAttribute="top" secondItem="RGQ-pi-upY" secondAttribute="top" id="kZu-CH-6Pc"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="kQ0-sf-HeD"/>

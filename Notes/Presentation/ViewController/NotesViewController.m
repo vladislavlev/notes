@@ -34,9 +34,8 @@
   [super viewDidLoad];
   self.tableView.backgroundColor = [UIColor backgroundColor];
   self.navigationController.navigationBar.tintColor = [UIColor themeColor];
-  [self.navigationController.navigationBar setBackgroundImage:[UIImage new]
+  [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"background"]
                            forBarMetrics:UIBarMetricsDefault];
-  self.navigationController.navigationBar.shadowImage = [UIImage new];
   self.navigationController.navigationBar.translucent = YES;
   self.tableView.tableFooterView = [[UIView alloc] init];
   self.notes = [NSMutableArray array];
